@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+onnxruntime
+opencv-python
+sqlalchemy
+psycopg2-binary
+cloudinary
+python-multipart
+pillow
+numpy

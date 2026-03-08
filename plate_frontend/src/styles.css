@@ -1,0 +1,111 @@
+/* Metal Gray Background */
+body {
+    margin: 0;
+    font-family: 'Butter Pop', cursive;
+    background: linear-gradient(145deg, #2e2e2e, #1c1c1c);
+    color: white;
+  }
+  
+  /* Main Container */
+  .app-container {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Shiny Animated Heading */
+  .shiny-heading {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(
+      120deg,
+      #999,
+      #fff,
+      #999
+    );
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 3s linear infinite;
+    margin-bottom: 40px;
+  }
+  
+  @keyframes shine {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  
+  /* Split Layout */
+  .split-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Left Panel */
+  .left-panel {
+    width: 40%;
+    padding: 30px;
+    background: #3a3a3a;
+    border-radius: 12px;
+    box-shadow: inset 0 0 15px rgba(255,255,255,0.1);
+  }
+  
+  /* Right Panel */
+  .right-panel {
+    width: 50%;
+    padding: 30px;
+    background: #2b2b2b;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    min-height: 300px;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #5a5a5a;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #777;
+  }
+  
+  .detect-btn {
+    background: #0ea5e9;
+  }
+  
+  .detect-btn:hover {
+    background: #0284c7;
+  }
+  
+  /* Image */
+  .preview-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Result Box */
+  .result-box {
+    background: #444;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  /* Placeholder */
+  .placeholder {
+    color: #aaa;
+    margin-top: 100px;
+  }
